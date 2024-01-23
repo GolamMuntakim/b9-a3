@@ -36,13 +36,13 @@
 <body class="bg-[#FFF] mx-5">
     <header>
     <!-- nav section -->
-    <nav class="p-5 bg-[#FFF] flex justify-between  lg:flex justify-around lg:items-center ">
+    <nav class="p-5 bg-[#FFF] flex justify-between  lg:flex lg:justify-around lg:items-center ">
         <div class="flex items-center">
             <span class="text-3xl cursor-pointer mx-2 lg:hidden"><ion-icon name="menu" onclick="menu(this)"></ion-icon></span>
             <span class="text-2xl font-[Manrope] font-extrabold	">Hockey<span class="text-[#FF4240]">’</span>s</span>
 
-        </div>
-        <ul class="lg:flex  lg:items-center  bg-[#FFF] z-[-1] lg:z-auto lg:static absolute  lg:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
+        </div> 
+        <ul class="lg:flex  lg:items-center  bg-[#FFF] z-[2] lg:z-auto lg:static absolute  lg:opacity-100 opacity-0 top-[400px] transition-all ease-in duration-500">
             <li class="mx-4 my-6 md:my-0"><a class="text-xl text-[#FF4240] " href="">Home</a></li>
             <li class="mx-4 my-6 md:my-0"><a class="text-xl text-[#424247] hover:text-[#FF4240] duration-500" href="">About</a></li>
             <li class="mx-4 my-6 md:my-0"><a class="text-xl text-[#424247] hover:text-[#FF4240] duration-500" href="">Pages</a></li>
@@ -55,8 +55,7 @@
     <button class="flex bg-[#FF4240] text-white p-3 rounded-lg"> Get Ticket</button>
     </div>
     </div>
-        </div>
-        </nav>
+        
     </nav>
     <!-- javascript for responsive nav -->
     <script>
@@ -69,8 +68,8 @@
     </header>
     <!-- nav section end -->
     <!-- slider section -->
-    <main >
-        <div class="carousel relative w-[350px] h-[200px] lg:w-full lg:h-[550px]">
+    <main class="">
+        <div class="carousel relative w-[350px] h-[200px] lg:w-full lg:h-[550px] z-[1] lg:z-auto">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./Images/1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -367,6 +366,7 @@
 <br>
 <!-- client question section start -->
 <!-- get in touch section start -->
+<section>
 <div class="space-y-5">
     <h3 class="font-extrabold text-3xl text-center text-[#131318]">Get In Touch</h3>
     <p class="text-center text-[#13131899]">
@@ -374,7 +374,7 @@
     </p>
 </div>
 
-<div class="my-10  grid grid-cols-1  lg:grid-cols-3 lg:grid-rows-2  gap-3 max-h-[550px] bg-[#FFF] p-10 ">
+<div class="lg:my-10  grid grid-cols-1  lg:grid-cols-3 lg:grid-rows-2  gap-3 lg:max-h-[550px] bg-[#FFF] p-10 ">
     <div class="row-start-1	bg-[#BCED6D1A] p-4 rounded-lg my-5">
         <img src="./Images/Group 1171275317.png" alt="">
         <p class="text-[#13131866]">Phone Number : </p>
@@ -419,20 +419,57 @@
         <h4 class="#131318 font-extrabold"> 152/1 Mohakhali Wireless Gate</h4>
     </div>
 </div>
+</section>
 <!-- get in touch section end -->
+<!-- social media section start -->
+<section class="container">
+  <div class="my-10 bg-[#13131808] p-5  lg:p-10">
+    <h3 class="font-extrabold text-3xl text-center text-[#131318]">Social Media</h3>
+    <div class="flex justify-center my-10 gap-10 cursor-pointer ">
+      <i class="fa-brands fa-twitter fa-2xl"></i>
+      <i class="fa-brands fa-facebook-f fa-2xl"></i>
+      <i class="fa-brands fa-instagram fa-2xl"></i>
+      <i class="fa-brands fa-github fa-2xl"></i>
+    </div>
+  </div>
+  </section>
+  <!-- social media section end -->
+</main>
 
-      </main>
-  
-<footer>
+<footer class="footer grid grid-cols-2 grid-rows-3 lg:flex lg:justify-between p-10 bg-[#131318] text-[#FFF] ">
+  <nav class="text-center lg:text-left lg:space-y-3 col-start-1 col-span-2">
+    <h3 class="lg:m-4 m-auto lg:font-extrabold lg:text-lg	text-xl ">Get In Touch</h3>
+    <p class="lg:m-4 text-[#FFFFFF99]">Dit amet consectetur. Condimentum<br>  adipiscing aliquam turpis placerat dolor. Purus<br> urna in sit nullam proin. </p>
+    <div class=" m-auto lg:m-4 ">
+    <div class="flex  items-center gap-4"><i class="fa-regular fa-envelope" style="color: #e7081f;"></i>
+      <p class="text-[#FFFFFF99]">hockeys@support.com</p></div>
+    <div class="flex items-center gap-4"><i class="fa-solid fa-phone" style="color: #f20707;"></i>
+      <p class="text-[#FFFFFF99]">(+62) 123-321-543</p>
+    </div></div>
+  </nav> 
 
-
-
-
-
-
-
-
-
+  <nav class="lg:space-y-3 m-auto row-start-2 col-start-1 col-span-1">
+    <header class="font-semibold text-lg	 text-[#FFF]">Company</header> 
+    <a class="text-[#FFFFFF99]">Help Center</a>
+    <a class="text-[#FFFFFF99]">FAQ</a>
+    <a class="text-[#FFFFFF99]"> Ticket Support</a>
+    <a class="text-[#FFFFFF99]"> Contact Us</a>
+  </nav> 
+  <nav class="row-start-2 m-auto col-start-2 col-span-1 ">
+    <header class="lg:space-y-3 font-semibold text-lg	 text-[#FFF]">Support</header> 
+    <a class="text-[#FFFFFF99]">About us</a>
+    <a class="text-[#FFFFFF99]">Contact</a>
+    <a class="text-[#FFFFFF99]">Jobs</a>
+    <a class="text-[#FFFFFF99]">Press kit</a>
+  </nav> 
+  <nav class="m-auto row-start-3 col-start-1 col-span-2">
+    <h2 class=" font-semibold text-xl lg:text-lg text-[#FFF]">Services</h2> 
+    <a class="text-[#FFFFFF99]">Academy</a>
+    <a class="text-[#FFFFFF99]"> Group Lesson</a>
+    <a class="text-[#FFFFFF99]"> Private Lesson</a>
+    <a class="text-[#FFFFFF99]"> Hockeys for kids</a>
+    <a class="text-[#FFFFFF99]">  Hockeys for Adult</a>
+  </nav>
 </footer>
 </body>
 </html>
